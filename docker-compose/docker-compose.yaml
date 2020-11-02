@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+
+#####################
+# Service Simulator #
+#####################
+  service_simulator:
+    container_name: "service_simulator"
+    build:
+      context: '../api/'
+    env_file: '../api/.env'
+    ports:
+      - 4010:80
+    volumes:
+      - ../api/conf/nginx/nginx-site.conf:/etc/nginx/sites-enabled/api.conf
+      - ../api:/var/www/html
+
+#########
+# Tools #
+#########
+  postgres:
+    container_name: "postgres"
+    image: postgres
+    volumes:
+        - ./db-files/postgres/data:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: pass
+      POSTGRES_USER: user
+      POSTGRES_DB: simulator
+
+  postgres_adminer:
+    container_name: "postgres_adminer"
+    image: adminer
+    restart: always
+    ports:
+      - 4013:8080
