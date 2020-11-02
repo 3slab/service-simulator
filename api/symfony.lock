@@ -1,4 +1,10 @@
 {
+    "behat/transliterator": {
+        "version": "v1.3.0"
+    },
+    "brick/math": {
+        "version": "0.9.1"
+    },
     "composer/package-versions-deprecated": {
         "version": "1.11.99"
     },
@@ -41,6 +47,19 @@
             "src/Repository/.gitignore"
         ]
     },
+    "doctrine/doctrine-migrations-bundle": {
+        "version": "2.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "2.2",
+            "ref": "baaa439e3e3179e69e3da84b671f0a3e4a2f56ad"
+        },
+        "files": [
+            "config/packages/doctrine_migrations.yaml",
+            "migrations/.gitignore"
+        ]
+    },
     "doctrine/event-manager": {
         "version": "1.1.1"
     },
@@ -52,6 +71,9 @@
     },
     "doctrine/lexer": {
         "version": "1.2.1"
+    },
+    "doctrine/migrations": {
+        "version": "3.0.1"
     },
     "doctrine/orm": {
         "version": "2.7.4"
@@ -71,11 +93,17 @@
             "ref": "b131e6cbfe1b898a508987851963fff485986285"
         }
     },
+    "gedmo/doctrine-extensions": {
+        "version": "v3.0.0"
+    },
     "monolog/monolog": {
         "version": "2.1.1"
     },
     "nikic/php-parser": {
         "version": "v4.10.2"
+    },
+    "ocramius/proxy-manager": {
+        "version": "2.2.3"
     },
     "php": {
         "version": "7.2"
@@ -91,6 +119,36 @@
     },
     "psr/log": {
         "version": "1.1.3"
+    },
+    "ramsey/collection": {
+        "version": "1.1.1"
+    },
+    "ramsey/uuid": {
+        "version": "4.1.1"
+    },
+    "ramsey/uuid-doctrine": {
+        "version": "1.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.3",
+            "ref": "471aed0fbf5620b8d7f92b7a5ebbbf6c0945c27a"
+        },
+        "files": [
+            "config/packages/ramsey_uuid_doctrine.yaml"
+        ]
+    },
+    "stof/doctrine-extensions-bundle": {
+        "version": "1.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.2",
+            "ref": "6c1ceb662f8997085f739cd089bfbef67f245983"
+        },
+        "files": [
+            "config/packages/stof_doctrine_extensions.yaml"
+        ]
     },
     "symfony/asset": {
         "version": "v5.1.7"
@@ -190,6 +248,15 @@
     "symfony/intl": {
         "version": "v5.1.7"
     },
+    "symfony/maker-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
+    },
     "symfony/monolog-bridge": {
         "version": "v5.1.8"
     },
@@ -210,6 +277,9 @@
     },
     "symfony/options-resolver": {
         "version": "v5.1.7"
+    },
+    "symfony/orm-pack": {
+        "version": "v2.0.0"
     },
     "symfony/polyfill-intl-grapheme": {
         "version": "v1.20.0"
@@ -349,5 +419,11 @@
     },
     "twig/twig": {
         "version": "v3.1.0"
+    },
+    "zendframework/zend-code": {
+        "version": "3.4.1"
+    },
+    "zendframework/zend-eventmanager": {
+        "version": "3.2.1"
     }
 }
