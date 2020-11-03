@@ -1,0 +1,10 @@
+{# DO THIS: the '!' symbol tells Symfony to extend from the original template #}
+{% extends '@!EasyAdmin/crud/new.html.twig' %}
+
+{% block main %}
+
+{% include "custom/template.html.twig"%}
+
+{{parent()}}
+{% endblock %}
+

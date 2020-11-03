@@ -1,0 +1,39 @@
+{% block template_action %}
+<pre>
+<label>Sélectionner une template </label>
+<select class="form-control action-import" id="supervisor" name="template">
+    {% for template in templates %}
+        <option value=""> </option>
+        <option value="{{template.name}}" data-value={{template|json_encode|e('html_attr') }}>{{template.name}}</option>
+    {% endfor %}
+</select>
+</pre>
+
+{% endblock template_action %}
+
+{% block body_javascript %}
+
+<script type="text/javascript">
+
+    $('.action-import').on('click', function(e) {
+            e.preventDefault();
+
+            var response = confirm("êtes vous sur ?");
+
+            if(response == true) {
+                var selectedElement = $(".action-import :selected");
+                var selectedValue = selectedElement.data("value");
+
+                $("#PreconfigureResponse_regex").val(selectedValue["regex"]);
+                $("#PreconfigureResponse_code").val(selectedValue["code"]);
+                $("#PreconfigureResponse_body").val(selectedValue["body"]);
+                $("#PreconfigureResponse_httpVerb").val(selectedValue["httpVerb"]);
+                $("#PreconfigureResponse_headers").val(JSON.stringify(selectedValue["headers"]));
+
+            }
+
+        });
+
+</script>
+
+{% endblock body_javascript %}

@@ -71,13 +71,13 @@ class PreconfigureResponse
     private $body;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="json", nullable=true)
      */
-    private $headers;
+    private $headers = [];
 
 
     /**
-     * @return UuidInterface
+     * @return Ramsey\Uuid\UuidInterface
      */
     public function getId(): UuidInterface
     {
@@ -147,16 +147,14 @@ class PreconfigureResponse
 
     public function getHeaders(): ?string
     {
-        return $this->headers;
+        return json_encode($this->headers);
     }
 
-    public function setHeaders(string $headers): self
+    public function setHeaders(?string $headers): self
     {
-        $this->headers = $headers;
+        $this->headers = json_decode($headers,true);
 
         return $this;
     }
-
-
 
 }
