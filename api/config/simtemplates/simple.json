@@ -1,0 +1,11 @@
+{
+    "name": "simple",
+    "httpVerb": "post",
+    "regex": "/[A-Za-z0-9]+/",
+    "code": 200,
+    "body": "{\"exemple\":\"de body\"}",
+    "headers": {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+    }
+}
