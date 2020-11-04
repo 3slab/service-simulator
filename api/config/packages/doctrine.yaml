@@ -1,5 +1,8 @@
 doctrine:
     dbal:
+        driver: 'pgsql'
+        server_version: '12.3'
+        charset: utf8
         url: '%env(resolve:DATABASE_URL)%'
 
         # IMPORTANT: You MUST configure your server version,
@@ -9,6 +12,10 @@ doctrine:
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
+        filters:
+            softdeleteable:
+                class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+                enabled: true
         mappings:
             App:
                 is_bundle: false

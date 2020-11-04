@@ -1,0 +1,15 @@
+Dashboard: Tableau de board
+Preconfigure Response: Réponses préconfigurées
+
+PreconfigureResponse:  Réponses préconfigurées
+
+# Fields
+ID: Id
+Priority: Priorité 
+HttpVerb: Verbe http
+Code: Code http de la réponse 
+Regex: Regex
+Body: Body
+Headers: Headers
+
+# Action

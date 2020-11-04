@@ -35,6 +35,3 @@ RUN cd /var/www/html \
     && composer install --no-scripts -n \
     && composer clearcache -n \
     && bin/console assets:install
-
-
-
