@@ -21,7 +21,7 @@ final class Version20201102165921 extends AbstractMigration
     {
         // this up() migration is auto-generated, please modify it to your needs
 
-        $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'pgsql', 'Migration can only be executed safely on \'pgsql\'.');
+        $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'postgresql', 'Migration can only be executed safely on \'postgresql\'.');
 
         $this->addSql('CREATE TABLE preconfigure_response (id UUID NOT NULL, priority INT NOT NULL, http_verb VARCHAR(255) NOT NULL, regex VARCHAR(255) NOT NULL, code INT NOT NULL, body TEXT NOT NULL, headers TEXT NOT NULL, created_by VARCHAR(255) DEFAULT NULL, updated_by VARCHAR(255) DEFAULT NULL, created_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, updated_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, deleted_at TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL, PRIMARY KEY(id))');
         $this->addSql('COMMENT ON COLUMN preconfigure_response.id IS \'(DC2Type:uuid)\'');
