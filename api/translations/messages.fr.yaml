@@ -3,6 +3,8 @@ Preconfigure Response: Réponses préconfigurées
 
 PreconfigureResponse:  Réponses préconfigurées
 
+Request: Appels d'API
+
 # Fields
 ID: Id
 Priority: Priorité 
@@ -12,4 +14,12 @@ Regex: Regex
 Body: Body
 Headers: Headers
 
-# Action
+# Request
+
+Call At: Heure de l’appel
+Regex Request: Regex qui a matché
+URL: Url appelée
+Header Request: Headers de la requête
+Body Request: Body de la requête
+Header Response: Headers de la réponse
+Body Response: Body de la réponse
