@@ -1,0 +1,30 @@
+{# DO THIS: the '!' symbol tells Symfony to extend from the original template #}
+{% extends '@!EasyAdmin/crud/index.html.twig' %}
+
+{% block main %}
+    {% if removeAllUrl is defined %}
+        <a class="delete-all" href={{removeAllUrl}}>
+            <i class="fa fa-trash" aria-hidden="true"></i>
+            {{ 'remove-all'|trans }}
+        </a>
+    {% endif %}
+
+    {{parent()}}
+    
+{% endblock %}
+
+{% block body_javascript %}
+<script type="text/javascript">
+    $('.delete-all').on('click', function(e) {
+            e.preventDefault();
+
+            var response = confirm("êtes vous sur ?");
+
+            if(response == true) {
+                var path = $(".delete-all").attr('href');
+                window.location.href = path;
+            }
+        });
+</script>
+
+{% endblock body_javascript %}
