@@ -23,3 +23,7 @@ Header Request: Headers de la requête
 Body Request: Body de la requête
 Header Response: Headers de la réponse
 Body Response: Body de la réponse
+
+
+# Action
+remove-all: Vider
