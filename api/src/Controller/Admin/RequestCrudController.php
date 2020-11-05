@@ -19,6 +19,12 @@ class RequestCrudController extends AbstractCrudController
         return Request::class;
     }
 
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->setDefaultSort(['callAt' => 'DESC']);
+    }
+
 
     public function configureFields(string $pageName): iterable
     {
