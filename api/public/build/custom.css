@@ -1,0 +1,6 @@
+.delete-all {
+    float: right;
+}
+#PreconfigureResponse_body {
+    overflow: auto !important;
+}

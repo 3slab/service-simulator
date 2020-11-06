@@ -1,0 +1,8 @@
+{
+    "name": "Detaile des measures par circuit en jour",
+    "httpVerb": "post",
+    "regex": "/api\/measure\/cumul\/detailed\/[\\d\\w-]+/day",
+    "code": 200,
+    "body": "{\"flow\":[{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"year\":\"2020\",\"month\":\"11\",\"day\":\"01\"},\"total\":4,\"average\":0.043478260869565216},\"sensor\":[{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"year\":\"2020\",\"month\":\"11\",\"day\":\"01\"},\"total\":292.3,\"average\":12.708695652173914}]}",
+    "headers":  {"Content-Type":	"application/json"}
+}

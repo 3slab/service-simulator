@@ -1,0 +1,9 @@
+{
+    "name": "Nombre total d'alarm par type",
+    "httpVerb": "post",
+    "regex": "/api\/alarm\/count/",
+    "code": 200,
+    "body": "{\"count\": 2}",
+    "headers": {
+        "Content-Type":	"application/json"}
+}

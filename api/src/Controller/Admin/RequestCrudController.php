@@ -105,7 +105,7 @@ class RequestCrudController extends AbstractCrudController
     public function configureAssets(Assets $assets): Assets
     {
         return $assets
-            ->addCssFile('build/request.css');
+            ->addCssFile('build/custom.css');
     }
 
 }

@@ -1,0 +1,8 @@
+{
+    "name": "Cumul des measures par année",
+    "httpVerb": "post",
+    "regex": "/api\/measure\/cumul\/year",
+    "code": 200,
+    "body": "{\"currentDate\":{\"date\":\"2020-11-06 13:13:40.055976\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"lastYearDate\":{\"date\":\"2019-11-06 13:13:40.055976\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"totalYear\":5784.2,\"totalLastYear\":0,\"valueMonthOfLastYear\":0,\"valueCurrentMonth\":14}",
+    "headers": {"Content-Type":	"application/json"}
+}
