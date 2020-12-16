@@ -1,0 +1,8 @@
+{
+    "name": "Détail des mesures par circuit",
+    "httpVerb": "get",
+    "regex": "/api\/measure\/cumul\/detailed\/[\\d\\w-]+/",
+    "code": 200,
+    "body": "{\"flow\":[{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-05T00:00:00.000Z\"},\"total\":0,\"average\":0}],\"sensor\":[{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-05T00:00:00.000Z\"},\"total\":13.362499999999997,\"average\":13.362499999999997}]}",
+    "headers":  {"Content-Type":	"application/json"}
+}

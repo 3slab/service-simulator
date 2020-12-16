@@ -12,15 +12,19 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-        main:
+        admin:
             stateless: true
             anonymous: false
+            pattern: ^/admin
             provider: memory_provider
             http_basic:
                 realm: Secured Area
             logout:
                 path:   /logout
                 target: /
+        main:
+            stateless: true
+            security: false
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication

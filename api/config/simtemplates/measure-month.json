@@ -1,0 +1,8 @@
+{
+    "name": "Cumule des mesures par mois",
+    "httpVerb": "post",
+    "regex": "/api\/measure\/cumul\/month",
+    "code": 200,
+    "body": "{\"2020\":{\"1\":null,\"2\":null,\"3\":null,\"4\":null,\"5\":null,\"6\":null,\"7\":null,\"8\":null,\"9\":{\"cumul\":3115,\"sum\":3115},\"10\":{\"cumul\":5770.2,\"sum\":2655.2},\"11\":{\"cumul\":5784.2,\"sum\":14},\"12\":null}}",
+    "headers": {"Content-Type":	"application/json"}
+}

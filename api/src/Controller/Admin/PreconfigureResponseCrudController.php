@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\PreconfigureResponse;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Assets;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Config\KeyValueStore;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
@@ -39,7 +40,7 @@ class PreconfigureResponseCrudController extends AbstractCrudController
                 ->renderAsNativeWidget(true),
             TextField::new('regex'),
             IntegerField::new('code')->setFormTypeOptions(['attr' => ['min' => 0]]),
-            TextareaField::new('body'),
+            TextareaField::new('body')->setFormTypeOptions(['attr' => ['rows' => 10]]),
             TextareaField::new('headers'),
         ];
     }
@@ -56,6 +57,11 @@ class PreconfigureResponseCrudController extends AbstractCrudController
         return $responseParameters;
     }
 
+    public function configureAssets(Assets $assets): Assets
+    {
+        return $assets
+            ->addCssFile('build/custom.css');
+    }
 
 
     private function getPreconfigureTemplate()
@@ -75,5 +81,6 @@ class PreconfigureResponseCrudController extends AbstractCrudController
 
         return $templates;
     }
+
 
 }

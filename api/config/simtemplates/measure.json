@@ -1,0 +1,8 @@
+{
+    "name": "Mesures par circuit",
+    "httpVerb": "get",
+    "regex": "/api\/measure\/cumul\/[\\d\\w-]+/",
+    "code": 200,
+    "body": "{\"flow\":[{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-01T23:00:00.000Z\"},\"total\":3,\"average\":3},{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-02T23:00:00.000Z\"},\"total\":3,\"average\":3},{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-03T23:00:00.000Z\"},\"total\":4,\"average\":4},{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-04T23:00:00.000Z\"},\"total\":0,\"average\":0}],\"sensor\":[{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-01T23:00:00.000Z\"},\"total\":12.980952380952381,\"average\":12.980952380952381},{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-02T23:00:00.000Z\"},\"total\":13.112499999999997,\"average\":13.112499999999997},{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-03T23:00:00.000Z\"},\"total\":13.18333333333333,\"average\":13.18333333333333},{\"_id\":{\"circuit\":\"c1336962-c447-4d5a-a553-bc3f0f8e4deb\",\"date\":\"2020-11-04T23:00:00.000Z\"},\"total\":13.464285714285715,\"average\":13.464285714285715}]}",
+    "headers": {"Content-Type":	"application/json"}
+}
