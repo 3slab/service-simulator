@@ -1,5 +1,5 @@
 {
-    "name": "Aquitée une alarme",
+    "name": "Acquitée une alarme",
     "httpVerb": "post",
     "regex": "#api\/alarm\/[\\d\\w-]+\/ack#",
     "code": 200,

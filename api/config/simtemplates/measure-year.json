@@ -1,5 +1,5 @@
 {
-    "name": "Cumul des measures par année",
+    "name": "Cumule des mesures par année",
     "httpVerb": "post",
     "regex": "/api\/measure\/cumul\/year",
     "code": 200,

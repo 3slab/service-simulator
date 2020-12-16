@@ -1,0 +1,10 @@
+{
+    "name": "Healthcheck",
+    "httpVerb": "get",
+    "regex": "/healthcheck",
+    "code": 200,
+    "body": "{\"portal_http\": {  \"up\": true,  \"errorType\": null},\"referential_http\": {  \"up\": true,  \"errorType\": null},\"measure_http\": {  \"up\": true,  \"errorType\": null},\"alarm_http\": {  \"up\": true,  \"errorType\": null},\"alarm_webhook_http\": {  \"up\": true,  \"errorType\": null},\"setting_http\": {  \"up\": true,  \"errorType\": null}}",
+    "headers": {
+        "Content-Type":	"application/json"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "name": "Detaile des measures par circuit",
+    "name": "Détail des mesures par circuit",
     "httpVerb": "get",
     "regex": "/api\/measure\/cumul\/detailed\/[\\d\\w-]+/",
     "code": 200,

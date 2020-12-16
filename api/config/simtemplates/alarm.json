@@ -1,12 +1,12 @@
 {
     "name": "List des alarmes",
-    "httpVerb": "post",
+    "httpVerb": "get",
     "regex": "/api\/alarm\/list/",
     "code": 200,
     "body": "[{\"id\":\"5f8a5028d3e73116d0065a82\",\"familly\":\"Arrsage\",\"origin\":\"Superviseur\",\"externalId\":null,\"sectorId\":\"66a2ff9a-ab81-4936-bc61-7d142580bb7f\",\"sectorName\":\"Croissy Lab 3S\",\"locationReferenceId\":\"39cd5bc8-fd7e-499f-8234-4b3084e2fff9\",\"locationReferenceName\":\"Ile Saint-Aubin\",\"locationReferenceSigId\":\"J03562\",\"circuitId\":null,\"circuitName\":null,\"equipmentType\":\"Relay\",\"equipmentId\":\"61ecad16-d6cf-489f-ab40-5196aad5f754\",\"equipmentExternalId\":\"5f7db9f3e85df1e1082dc1a4\",\"equipmentName\":\"Croissy_BST\",\"componentId\":null,\"componentInputId\":null,\"componentInputName\":null,\"componentInputExternalId\":null,\"startAt\":\"2020-10-17T02:00:08+00:00\",\"endAt\":\"2020-10-19T14:17:47+00:00\",\"type\":\"state_changed\",\"values\":\"{\"state_changed\":{\"old\":\"NORMAL\",\"new\":\"DEFECT\"}}\",\"configValues\":null,\"status\":\"ACKED\",\"ackReason\":\"SOLVED\",\"ackUserId\":\"8e240cf2-0791-404f-a9c7-50d60e01c4ff\",\"ackUserName\":\"admin@alm.fr admin\",\"componentOutputId\":null,\"componentOutputName\":null,\"componentOutputExternalId\":null,\"equipmentSerialNumber\":\"08000003F65C0001\"}]",
     "headers": {
         "Content-Type":	"application/json",
-        "x-pagination-total-count":"2",
+        "x-pagination-total-count":"1",
         "x-pagination-page-count":	"1",
         "x-pagination-current-page": "1",
         "x-pagination-per-page":"30"}

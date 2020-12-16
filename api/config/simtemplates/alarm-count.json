@@ -1,5 +1,5 @@
 {
-    "name": "Nombre total d'alarm par type",
+    "name": "Nombre total d'alarmes par type",
     "httpVerb": "post",
     "regex": "/api\/alarm\/count/",
     "code": 200,

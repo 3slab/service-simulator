@@ -1,5 +1,5 @@
 {
-    "name": "Detaile des measures par circuit en jour",
+    "name": "Détail des mesures par circuit en jour",
     "httpVerb": "post",
     "regex": "/api\/measure\/cumul\/detailed\/[\\d\\w-]+/day",
     "code": 200,
